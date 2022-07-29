@@ -1,0 +1,8 @@
+# Do not commit data and model weights
+**/*.mp4
+**/*.pth
+awwkl_data/
+awwkl_models/
+
+# Commit log results
+!**/*.log

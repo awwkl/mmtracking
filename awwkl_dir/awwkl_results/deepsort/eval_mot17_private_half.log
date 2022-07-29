@@ -1,0 +1,163 @@
+eval_20220607_232937.log
+{"config": "configs\\mot\\deepsort\\deepsort_faster-rcnn_fpn_4e_mot17-private-half.py", "mode": "test", "epoch": 4, "IDF1": 0.696, "IDP": 0.76, "IDR": 0.641, "Rcll": 0.751, "Prcn": 0.89, "GT": 1017, "MT": 510, "PT": 393, "ML": 114, "FP": 15060, "FN": 40326, "IDs": 3183, "FM": 3486, "MOTA": 0.638, "MOTP": 0.19, "IDt": 1458, "IDa": 1191, "IDm": 279, "HOTA": 0.57}
+~1.2 hours
+
+Eval Config:
+USE_PARALLEL         : False
+NUM_PARALLEL_CORES   : 8
+BREAK_ON_ERROR       : True
+RETURN_ON_ERROR      : False
+LOG_ON_ERROR         : C:\Users\Khai_Loong\anaconda3\envs\open-mmlab\lib\site-packages\error_log.txt
+PRINT_RESULTS        : True
+PRINT_ONLY_COMBINED  : False
+PRINT_CONFIG         : True
+TIME_PROGRESS        : True
+DISPLAY_LESS_PROGRESS : True
+OUTPUT_SUMMARY       : True
+OUTPUT_EMPTY_CLASSES : True
+OUTPUT_DETAILED      : True
+PLOT_CURVES          : True
+
+MotChallenge2DBox Config:
+GT_FOLDER            : C:\Users\KHAI_L~1\AppData\Local\Temp\tmpjnzt1l85
+TRACKERS_FOLDER      : C:\Users\KHAI_L~1\AppData\Local\Temp\tmpxqxfq6qz
+OUTPUT_FOLDER        : None
+TRACKERS_TO_EVAL     : ['track']
+CLASSES_TO_EVAL      : ['pedestrian']
+BENCHMARK            : MOT17
+SPLIT_TO_EVAL        : train
+INPUT_AS_ZIP         : False
+PRINT_CONFIG         : True
+DO_PREPROC           : True
+TRACKER_SUB_FOLDER   :
+OUTPUT_SUB_FOLDER    :
+TRACKER_DISPLAY_NAMES : None
+SEQMAP_FOLDER        : None
+SEQMAP_FILE          : C:\Users\KHAI_L~1\AppData\Local\Temp\tmpxqxfq6qz\videoseq.txt
+SEQ_INFO             : None
+GT_LOC_FORMAT        : {gt_folder}/{seq}/gt/gt_half-val.txt
+SKIP_SPLIT_FOL       : True
+
+Evaluating 1 tracker(s) on 21 sequence(s) for 1 class(es) on MotChallenge2DBox dataset using the following metrics: HOTA, Count      
+
+
+Evaluating track
+
+1 eval_sequence(MOT17-02-DPM, track)                                     0.4487 sec
+2 eval_sequence(MOT17-02-FRCNN, track)                                   0.4511 sec
+3 eval_sequence(MOT17-02-SDP, track)                                     0.4901 sec
+4 eval_sequence(MOT17-04-DPM, track)                                     1.3197 sec
+5 eval_sequence(MOT17-04-FRCNN, track)                                   1.1393 sec
+6 eval_sequence(MOT17-04-SDP, track)                                     1.1332 sec
+7 eval_sequence(MOT17-05-DPM, track)                                     0.4230 sec
+8 eval_sequence(MOT17-05-FRCNN, track)                                   0.4260 sec
+9 eval_sequence(MOT17-05-SDP, track)                                     0.4243 sec
+10 eval_sequence(MOT17-09-DPM, track)                                     0.2863 sec
+11 eval_sequence(MOT17-09-FRCNN, track)                                   0.2876 sec
+12 eval_sequence(MOT17-09-SDP, track)                                     0.2855 sec
+13 eval_sequence(MOT17-10-DPM, track)                                     0.3907 sec
+14 eval_sequence(MOT17-10-FRCNN, track)                                   0.3951 sec
+15 eval_sequence(MOT17-10-SDP, track)                                     0.3866 sec
+16 eval_sequence(MOT17-11-DPM, track)                                     0.4715 sec
+17 eval_sequence(MOT17-11-FRCNN, track)                                   0.4715 sec
+18 eval_sequence(MOT17-11-SDP, track)                                     0.4646 sec
+19 eval_sequence(MOT17-13-DPM, track)                                     0.5120 sec
+20 eval_sequence(MOT17-13-FRCNN, track)                                   0.3906 sec
+21 eval_sequence(MOT17-13-SDP, track)                                     0.3933 sec
+
+All sequences for track finished in 11.00 seconds
+
+HOTA: track-pedestrian             HOTA      DetA      AssA      DetRe     DetPr     AssRe     AssPr     LocA      RHOTA     HOTA(0) 
+  LocA(0)   HOTALocA(0)
+MOT17-02-DPM                       36.86     39.686    35.006    46.086    64.871    41.719    57.239    79.783    39.943    48.488  
+  69.89     33.888
+MOT17-02-FRCNN                     36.86     39.686    35.006    46.086    64.871    41.719    57.239    79.783    39.943    48.488  
+  69.89     33.888
+MOT17-02-SDP                       36.86     39.686    35.006    46.086    64.871    41.719    57.239    79.783    39.943    48.488  
+  69.89     33.888
+MOT17-04-DPM                       66.371    66.103    67.723    70.641    81.646    75.783    77.143    84.623    68.873    80.444  
+  81.488    65.553
+MOT17-04-FRCNN                     66.371    66.103    67.723    70.641    81.646    75.783    77.143    84.623    68.873    80.444  
+  81.488    65.553
+MOT17-04-SDP                       66.371    66.103    67.723    70.641    81.646    75.783    77.143    84.623    68.873    80.444  
+  81.488    65.553
+MOT17-05-DPM                       49.394    56.571    43.423    69.461    68.022    65.502    52.244    83.334    54.877    61.069  
+  78.728    48.078
+MOT17-05-FRCNN                     49.394    56.571    43.423    69.461    68.022    65.502    52.244    83.334    54.877    61.069  
+  78.728    48.078
+MOT17-05-SDP                       49.394    56.571    43.423    69.461    68.022    65.502    52.244    83.334    54.877    61.069  
+  78.728    48.078
+MOT17-09-DPM                       55.626    56.835    54.59     61.178    79.842    63.565    70.413    84.468    57.786    68.196  
+  80.969    55.218
+MOT17-09-FRCNN                     55.626    56.835    54.59     61.178    79.842    63.565    70.413    84.468    57.786    68.196  
+  80.969    55.218
+MOT17-09-SDP                       55.626    56.835    54.59     61.178    79.842    63.565    70.413    84.468    57.786    68.196  
+  80.969    55.218
+MOT17-10-DPM                       50.653    46.95     55.076    54.06     67.48     62.413    70.254    79.963    54.515    67.156  
+  74.176    49.813
+MOT17-10-FRCNN                     50.653    46.95     55.076    54.06     67.48     62.413    70.254    79.963    54.515    67.156  
+  74.176    49.813
+MOT17-10-SDP                       50.653    46.95     55.076    54.06     67.48     62.413    70.254    79.963    54.515    67.156  
+  74.176    49.813
+MOT17-11-DPM                       61.555    58.807    64.686    70.113    73.158    74.864    75.36     86.61     67.321    72.274  
+  82.942    59.946
+MOT17-11-FRCNN                     61.555    58.807    64.686    70.113    73.158    74.864    75.36     86.61     67.321    72.274  
+  82.942    59.946
+MOT17-11-SDP                       61.555    58.807    64.686    70.113    73.158    74.864    75.36     86.61     67.321    72.274  
+  82.942    59.946
+MOT17-13-DPM                       49.555    48.539    50.721    58.253    65.148    54.316    79.902    80.528    54.345    66.052  
+  74.866    49.451
+MOT17-13-FRCNN                     49.555    48.539    50.721    58.253    65.148    54.316    79.902    80.528    54.345    66.052  
+  74.866    49.451
+MOT17-13-SDP                       49.555    48.539    50.721    58.253    65.148    54.316    79.902    80.528    54.345    66.052  
+  74.866    49.451
+COMBINED                           56.987    55.949    58.976    62.968    74.631    67.86     72.186    83.351    60.699    70.479  
+  78.536    55.351
+
+Count: track-pedestrian            Dets      GT_Dets   IDs       GT_IDs    
+MOT17-02-DPM                       7019      9880      112       53
+MOT17-02-FRCNN                     7019      9880      112       53
+MOT17-02-SDP                       7019      9880      112       53
+MOT17-04-DPM                       20919     24178     97        69
+MOT17-04-FRCNN                     20919     24178     97        69
+MOT17-04-SDP                       20919     24178     97        69
+MOT17-05-DPM                       3428      3357      144       71
+MOT17-05-FRCNN                     3428      3357      144       71
+MOT17-05-SDP                       3428      3357      144       71
+MOT17-09-DPM                       2206      2879      42        22
+MOT17-09-FRCNN                     2206      2879      42        22
+MOT17-09-SDP                       2206      2879      42        22
+MOT17-10-DPM                       4745      5923      116       36
+MOT17-10-FRCNN                     4745      5923      116       36
+MOT17-10-SDP                       4745      5923      116       36
+MOT17-11-DPM                       4329      4517      90        44
+MOT17-11-FRCNN                     4329      4517      90        44
+MOT17-11-SDP                       4329      4517      90        44
+MOT17-13-DPM                       2822      3156      446       44
+MOT17-13-FRCNN                     2822      3156      446       44
+MOT17-13-SDP                       2822      3156      446       44
+COMBINED                           136404    161670    3141      1017
+                IDF1   IDP   IDR  Rcll  Prcn   GT  MT  PT  ML    FP    FN  IDs    FM  MOTA  MOTP  IDt  IDa IDm      HOTA
+MOT17-02-DPM   45.8% 55.1% 39.2% 55.2% 77.6%   53  11  32  10  1570  4431  314   331 36.1% 0.226  184   34   9  0.368598
+MOT17-02-FRCNN 45.8% 55.1% 39.2% 55.2% 77.6%   53  11  32  10  1570  4431  314   331 36.1% 0.226  184   34   9  0.368598
+MOT17-02-SDP   45.8% 55.1% 39.2% 55.2% 77.6%   53  11  32  10  1570  4431  314   331 36.1% 0.226  184   34   9  0.368598
+MOT17-04-DPM   80.3% 86.6% 74.9% 83.7% 96.8%   69  51  15   3   673  3932  100   283 80.5% 0.177   66   17  16  0.663710
+MOT17-04-FRCNN 80.3% 86.6% 74.9% 83.7% 96.8%   69  51  15   3   673  3932  100   283 80.5% 0.177   66   17  16  0.663710
+MOT17-04-SDP   80.3% 86.6% 74.9% 83.7% 96.8%   69  51  15   3   673  3932  100   283 80.5% 0.177   66   17  16  0.663710
+MOT17-05-DPM   59.5% 58.9% 60.1% 82.8% 81.1%   71  42  25   4   648   577  136    97 59.5% 0.186  100   34  40  0.493943
+MOT17-05-FRCNN 59.5% 58.9% 60.1% 82.8% 81.1%   71  42  25   4   648   577  136    97 59.5% 0.186  100   34  40  0.493943
+MOT17-05-SDP   59.5% 58.9% 60.1% 82.8% 81.1%   71  42  25   4   648   577  136    97 59.5% 0.186  100   34  40  0.493943
+MOT17-09-DPM   69.7% 80.4% 61.6% 72.4% 94.4%   22  11   9   2   123   796   76    67 65.4% 0.179   47   13   6  0.556263
+MOT17-09-FRCNN 69.7% 80.4% 61.6% 72.4% 94.4%   22  11   9   2   123   796   76    67 65.4% 0.179   47   13   6  0.556263
+MOT17-09-SDP   69.7% 80.4% 61.6% 72.4% 94.4%   22  11   9   2   123   796   76    67 65.4% 0.179   47   13   6  0.556263
+MOT17-10-DPM   66.8% 75.1% 60.1% 68.0% 84.9%   36  14  18   4   715  1893  102   191 54.2% 0.232   46   25   6  0.506535
+MOT17-10-FRCNN 66.8% 75.1% 60.1% 68.0% 84.9%   36  14  18   4   715  1893  102   191 54.2% 0.232   46   25   6  0.506535
+MOT17-10-SDP   66.8% 75.1% 60.1% 68.0% 84.9%   36  14  18   4   715  1893  102   191 54.2% 0.232   46   25   6  0.506535
+MOT17-11-DPM   74.2% 75.8% 72.6% 79.4% 82.8%   44  19  16   9   744   932   46    77 61.9% 0.147   25   14  10  0.615547
+MOT17-11-FRCNN 74.2% 75.8% 72.6% 79.4% 82.8%   44  19  16   9   744   932   46    77 61.9% 0.147   25   14  10  0.615547
+MOT17-11-SDP   74.2% 75.8% 72.6% 79.4% 82.8%   44  19  16   9   744   932   46    77 61.9% 0.147   25   14  10  0.615547
+MOT17-13-DPM   65.1% 69.0% 61.7% 72.1% 80.6%   44  22  16   6   547   881  287   116 45.7% 0.223   18  260   6  0.495550
+MOT17-13-FRCNN 65.1% 69.0% 61.7% 72.1% 80.6%   44  22  16   6   547   881  287   116 45.7% 0.223   18  260   6  0.495550
+MOT17-13-SDP   65.1% 69.0% 61.7% 72.1% 80.6%   44  22  16   6   547   881  287   116 45.7% 0.223   18  260   6  0.495550
+OVERALL        69.6% 76.0% 64.1% 75.1% 89.0% 1017 510 393 114 15060 40326 3183  3486 63.8% 0.190 1458 1191 279  0.569871
+{'IDF1': 0.696, 'IDP': 0.76, 'IDR': 0.641, 'Rcll': 0.751, 'Prcn': 0.89, 'GT': 1017, 'MT': 510, 'PT': 393, 'ML': 114, 'FP': 15060, 'FN': 40326, 'IDs': 3183, 'FM': 3486, 'MOTA': 0.638, 'MOTP': 0.19, 'IDt': 1458, 'IDa': 1191, 'IDm': 279, 'HOTA': 0.57}
